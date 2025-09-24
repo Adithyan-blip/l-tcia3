@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Dashboard</title>
+
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container mt-4">
+    <h2 class="text-center mb-4">🌤 Weather Dashboard</h2>
+
+    <!-- Search Form -->
+    <div class="row mb-4">
+      <div class="col-md-8 offset-md-2">
+        <div class="input-group">
+          <input type="text" id="cityInput" class="form-control" placeholder="Enter city name">
+          <button id="searchBtn" class="btn btn-primary">Search</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Current Weather -->
+    <div id="currentWeather" class="card p-3 shadow mb-4 d-none">
+      <h4>Current Weather</h4>
+      <div id="weatherDetails"></div>
+    </div>
+
+    <!-- Forecast -->
+    <h4 class="text-center mb-3 d-none" id="forecastTitle">5-Day Forecast</h4>
+    <div id="forecast" class="row"></div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom JS -->
+  <script src="script.js"></script>
+</body>
+</html>
